@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<link rel="stylesheet" href="styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<!-- full page container-->
+		<div class="grid_page_container">
+			<!-- Header container below this line-->
+			<div class="page_header">
+				<a href="index.html">
+					<img src="/pictures/logo_mk_design.png" title="logo mk design" />
+				</a>
+			</div>
+			<!-- Navigation Menu below this line-->
+			<div class="page_menu">
+				<nav class="navigation_menu">
+					<div><a href="index.html"> Home </a></div>
+					<div><a href="pricing.html"> Tarieven </a></div>
+					<div><a href="portfolio.html"> Portfolio </a></div>
+					<div><a href="contact.html"> Contact </a></div>
+				</nav>
+			</div>
+
+			<!-- Content container below this line -->
+
+			<div class="page_content">
+				<h2>Contact</h2>
+				<p>
+					Bij <strong> MK Design </strong> staan wij altijd voor je klaar. Via
+					onderstaand contactformulier kan je de vraag insturen. Voor dringende
+					zaken raden wij aan telefonisch contact met ons op te nemen.
+				</p>
+				<p>
+					Zorg ervoor dat je de vraag zo uitgebreid mogelijk stelt zodat wij het
+					meest volledige antwoord kunnen geven.
+				</p>
+				<section class="contact_section">
+					<h2>Contactformulier</h2>
+					<div class="contact_container">
+						<form name="contactform" method="POST" data-netlify="true">
+							<div>
+								<label for="firstname"> voornaam* </label>
+								<input
+									type="text"
+									name="firstname"
+									id="firstname"
+									required
+									class="form_element"
+									placeholder="Jan"
+								/>
+							</div>
+							<div>
+								<label for="lastname"> Achternaam* </label>
+								<input
+									type="text"
+									name="lastname"
+									id="lastname"
+									required
+									class="form_element"
+									placeholder="Jansen"
+								/>
+							</div>
+							<div>
+								<label for="company"> Bedrijfsnaam </label>
+								<input
+									type="text"
+									name="company"
+									id="company"
+									class="form_element"
+									placeholder="Voorbeeld BV"
+								/>
+							</div>
+							<div>
+								<label for="email"> E-mail* </label>
+								<input
+									type="email"
+									name="email"
+									id="email"
+									required
+									class="form_element"
+									placeholder="Jan.jansen@example.com"
+								/>
+							</div>
+							<div>
+								<label for="message"> Bericht*</label>
+								<textarea
+									name="message"
+									id="message"
+									rows="10"
+									placeholder="Uw bericht"
+									required
+								></textarea>
+							</div>
+							<div class="submit">
+								<input type="submit" value="Verzenden" />
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<p>
+					Alle ontvangen vragen proberen wij op werkdagen binnen 24 uur in
+					behandeling te nemen. Binnen 72 uur ontvangt u van ons uiterlijk een
+					reactie. Mocht je vraag in de tussentijd al beantwoord zijn willen wij
+					vragen dit aan ons te melden.
+				</p>
+				<p>
+					<strong>
+						Voor storingen aan door ons gemaakte websites graag altijd contact
+						opnemen via <a href="tel: 072-1234567">072-1234567</a>
+					</strong>
+				</p>
+			</div>
+			<!-- Footer container below this line-->
+			<div class="page_footer">
+				<address>
+					MK design<br />
+					Hoofdstraat 1 <br />1234 AA Alkmaar
+					<phone>
+						<a href="tel: 072-1234567" target="_blank">072-1234567 </a></phone
+					>
+				</address>
+
+				<aside class="copyright">&copy Copyright MK design 2022</aside>
+			</div>
+		</div>
+	</body>
+</html>

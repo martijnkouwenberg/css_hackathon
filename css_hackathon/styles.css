@@ -1,0 +1,256 @@
+/* basic CSS */
+
+.body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	min-height: 100vh;
+}
+h2 {
+	color: #3c3eb3;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Containers for design website */
+.grid_page_container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 100px 50px auto 85px;
+	grid-gap: 5px;
+}
+
+/*     Page header   */
+.page_header {
+	background-image: url(pictures/banner_home.jpg);
+}
+.page_header > a > img {
+	float: right;
+}
+
+.page_menu {
+	background-color: #3c3eb3;
+	display: flex;
+	width: 100%;
+}
+
+/*    Navigation header menu   */
+.navigation_menu {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+.navigation_menu a {
+	color: whitesmoke;
+}
+.navigation_menu :hover {
+	color: black;
+}
+
+/* Content container */
+
+.page_content {
+	margin-left: 10px;
+	width: 75vw;
+	margin: 0 auto;
+}
+
+/*     Footer   */
+
+.page_footer {
+	display: flex;
+	flex-direction: column;
+	width: 98%;
+	background-color: #3c3eb3;
+	color: whitesmoke;
+	position: relative;
+	padding: 10px 10px 10px 10px;
+
+	margin-right: 20px;
+}
+.page_footer > aside.copyright {
+	text-align: end;
+	padding-right: 10px;
+}
+
+.page_footer a {
+	color: whitesmoke;
+}
+/*    Contact form      */
+.contact_section {
+	border: black solid 5px;
+	min-height: 90vh;
+	max-width: 500px;
+	margin: 0 auto;
+	background-image: linear-gradient(175deg, white 0%, #3c3eb3 95%);
+}
+.contact_container form {
+	max-width: 500px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 5px;
+	grid-column: 1fr;
+	padding: 20px 20px 20px 20px;
+}
+
+.contact_container form label {
+	display: block;
+}
+.contact_container form textarea {
+	width: 100%;
+}
+.contact_container form input {
+	width: 100%;
+}
+.contact_container form .submit {
+	width: 50%;
+	border: #3c3eb3 3px solid;
+	margin: 0 auto;
+}
+
+/*    Styling Elements     */
+
+/*  usp banner home page */
+.usp_mkdesign {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: whitesmoke;
+	border: 3px solid #3c3eb3;
+	border-radius: 10px;
+	padding: 0px 10px 10px 10px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 50px;
+	list-style: url(/pictures/checkmark.png);
+}
+
+/*      Button styles     */
+button {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 220px;
+	align-items: center;
+	background-color: whitesmoke;
+	font-size: 18px;
+	color: #3c3eb3;
+	border: #3c3eb3 3px solid;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #3c3eb3;
+	color: whitesmoke;
+}
+
+button a:hover {
+	text-decoration: none;
+	color: whitesmoke;
+}
+.pro button {
+	/*  Pricing page */
+	border: 3px solid black;
+}
+.pro button:hover {
+	border: 3px solid whitesmoke;
+}
+
+/*   Link Styles    */
+
+.page_content a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+
+/*     Pricing  */
+
+.price_container {
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	gap: 0.5em;
+	margin-bottom: 20px;
+}
+
+.start {
+	flex: 1;
+	background-color: whitesmoke;
+	border: #3c3eb3 5px solid;
+}
+.pro {
+	flex: 1;
+	background-color: #3c3eb3;
+	border: black 5px solid;
+	color: whitesmoke;
+}
+
+.pro h2 {
+	color: whitesmoke;
+}
+
+.expert {
+	flex: 1;
+	background-color: whitesmoke;
+	border: #3c3eb3 5px solid;
+}
+
+/*     Portfolio page */
+
+.portfolio_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+.portfolio_container h2 {
+	text-align: left;
+}
+
+.portfolio_container img {
+	border: lightgray solid 2.5px;
+}
+.ongedierte_portfolio {
+	flex: 1;
+}
+.winc_portfolio {
+	flex: 1;
+}
+.google_portfolio {
+	flex: 1;
+}
+
+/*      Media queries    */
+@media (min-width: 800px) {
+	.grid_container {
+		width: 100%;
+	}
+	.price_container {
+		flex-direction: row;
+		height: fit-content;
+	}
+	.price_container button {
+		bottom: 0px;
+	}
+}
+@media (min-width: 950px) {
+	.portfolio_container {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.portfolio_container h2 {
+		text-align: center;
+	}
+}
+
+@media (min-width: 300px) {
+	.page_footer {
+		bottom: 0px;
+	}
+}
